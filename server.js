@@ -12,7 +12,7 @@ const respHttpOptions = {
         'my-xxx-header': true
     }
 };
-app.get('/', (req, resp) => { // HANDLE THE REQUEST HERE
+app.get('*', (req, resp) => { // HANDLE THE REQUEST HERE
     resp.sendFile('index.html', respHttpOptions, (err) => {
         // SEND INDEX.HTML INSIDE PUBLIC DIRECTORY
         if (!err)
