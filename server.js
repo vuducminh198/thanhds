@@ -23,7 +23,7 @@ app.get('/', (req, resp) => { // HANDLE THE REQUEST HERE
 });
 
 try {
-    app.listen('https://boiling-wildwood-71437.herokuapp.com/',serverPort);
+    app.listen('0.0.0.0',serverPort);
     console.log(`Server started at ${serverPort}`);
 } catch (e) {
     console.log(e);
