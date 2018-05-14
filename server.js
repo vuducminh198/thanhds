@@ -2,7 +2,7 @@ const express = require('express');
 let app = express();
 app.use(express.static('public')); // NAME OF THE DIRECTORY IS PUBLIC
 
-const serverPort = 80;
+const serverPort = process.env.PORT || 3000;
 
 const respHttpOptions = {
     root: `public/`,
